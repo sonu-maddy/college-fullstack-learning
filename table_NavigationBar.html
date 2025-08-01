@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            padding: 5px;
+        }
+        td{
+            padding: 5px;
+        }
+        tr:first-child{
+            background-color:bisque;
+        }
+
+        .nav{
+            background-color: #ffd;
+            padding: 5px;
+            font-size: 18px;
+            font-family: sans-serif;
+
+        }
+        .nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .nav ul li{
+            text-transform: capitalize;
+            float: left;
+            padding-left: 40px;
+        }
+        .nav ul a li:hover{
+            scale: 0.9;
+            color: black;
+            cursor: pointer; /* wait, loading, progess, auto, move, not-allowed */
+        }
+
+
+
+        /* display property */
+         .parent{
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .child1{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            
+        }
+        .child2{
+            height: 50px;
+            width: 50px;
+            background-color: pink;
+           
+        }
+        .child3{
+            height: 50px;
+            width: 50px;
+            background-color: green ;
+           
+        }
+         .child4{
+            height: 50px;
+            width: 50px;
+            background-color: blue ;
+           
+        }
+
+        .blackBox{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <a href="#"><li>home</li></a>
+            <a href="#"><li>services</li></a>
+            <a href="#"> <li>product</li></a>
+            <a href="#"><li>about</li></a>
+            <a href="#"><li>contact</li></a>
+        </ul>
+    </div>
+
+<br><br>
+
+    <table border="1px">
+        <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+            <th>heading 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+        <div class="child4">4</div>
+    </div>
+
+    <br>
+
+    <div class="blackBox"></div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fuction odd and even numbers
+        function oddEven(num) {
+            if (num % 2 === 0) {
+                return "even";
+            } else {
+                return "odd";
+            }
+        }   
+        // function to check if a number is prime
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+        // function to find the factorial of a number
+        function factorial(num) {
+            if (num < 0) return "undefined";
+            if (num === 0 || num === 1) return 1;
+            let result = 1;
+            for (let i = 2; i <= num; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        // function to find the Fibonacci sequence up to n terms
+        function fibonacci(n) {
+            let fib = [0, 1];
+            for (let i = 2; i < n; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib.slice(0, n); // slice to return only the first n terms
+        }
+
+        // function to reverse a string
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        } 
+
+        // function to check if a string is a palindrome
+        function isPalindrome(str) {    
+            const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return cleanedStr === cleanedStr.split('').reverse().join('');
+        }  
+         
+        // function to find the largest number in an array
+        function findLargest(arr) {
+            if (arr.length === 0) return null;
+            let largest = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    largest = arr[i];
+                }
+            }
+            return largest;
+        }
+
+        // function to find the smallest number in an array
+        function findSmallest(arr) {    
+            if (arr.length === 0) return null;
+            let smallest = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < smallest) {
+                    smallest = arr[i];
+                }
+            }
+            return smallest;
+        }
+        // function to sort an array in ascending order
+        function sortArray(arr) {
+            return arr.slice().sort((a, b) => a - b);
+        }
+        // function to sort an array in descending order
+        function sortArrayDescending(arr) {
+            return arr.slice().sort((a, b) => b - a);
+        }
+        // function to remove duplicates from an array
+        function removeDuplicates(arr) {
+            return [...new Set(arr)];
+        }
+
+        // function to merge two arrays
+        function mergeArrays(arr1, arr2) {
+            return [...arr1, ...arr2];
+        }
+        // function to find the intersection of two arrays
+        function intersectArrays(arr1, arr2) {
+            return arr1.filter(value => arr2.includes(value));
+        }
+        // function to find the union of two arrays
+
+
+        function unionArrays(arr1, arr2) {
+            return Array.from(new Set([...arr1, ...arr2]));
+        }
+
+        // function to find the difference between two arrays
+        function differenceArrays(arr1, arr2) {
+            return arr1.filter(value => !arr2.includes(value));
+        }
+
+        // function to check if an array is sorted
+        function isArraySorted(arr) {
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < arr[i - 1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // function to shuffle an array
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // function to find the maximum value in an object
+        function findMaxInObject(obj) {
+            let max = -Infinity;
+            for (const key in obj) {
+                if (obj[key] > max) {
+                    max = obj[key];
+                }
+            }
+            return max;
+        }
+
+        // function to find the minimum value in an object
+        function findMinInObject(obj) {
+            let min = Infinity;
+            for (const key in obj) {
+                if (obj[key] < min) {
+                    min = obj[key];
+                }
+            }
+            return min;
+        }
+        // function to merge two objects
+        function mergeObjects(obj1, obj2) {
+            return { ...obj1, ...obj2 };
+        }
+        // function to check if an object is empty
+        function isEmptyObject(obj) {
+            return Object.keys(obj).length === 0;
+        }
+        // function to clone an object
+        function cloneObject(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
+
+        // function to get the keys of an object
+        function getObjectKeys(obj) {
+            return Object.keys(obj);
+        }
+
+
+        // function to get the values of an object
+
+        function getObjectValues(obj) {
+            return Object.values(obj);
+        }
+
+        // function to check if a key exists in an object
+        function hasKey(obj, key) {
+            return obj.hasOwnProperty(key);
+        }
+
+        // function to count the number of keys in an object
+        function countKeys(obj) {
+            return Object.keys(obj).length;
+        }
+
+        // function to find the average of an array of numbers
+        function averageArray(arr) {
+            if (arr.length === 0) return 0;
+            const sum = arr.reduce((acc, val) => acc + val, 0);
+            return sum / arr.length;
+        }
+
+        // function to find the median of an array of numbers
+        function medianArray(arr) {
+            if (arr.length === 0) return null;
+            const sorted = arr.slice().sort((a, b) => a - b);
+            const mid = Math.floor(sorted.length / 2);
+            return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>

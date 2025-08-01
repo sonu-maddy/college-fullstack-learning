@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Checkbox</h1>
+    <label for="option1">Option 1</label>
+    <input type="checkbox" id="option1" name="option1" value="Option1" />
+
+    <label for="option2">Option 2</label>
+    <input type="checkbox" id="option2" name="option2" value="Option2" />
+
+    <label for="option3">Option 3</label>
+    <input type="checkbox" id="option3" name="option3" value="Option3" /><br><br>
+
+    <label for="text">Feedback Form</label><br>
+    <textarea name="textarea" id="text" rows="4" cols="50"> </textarea><br>
+    <input type="submit" value="upload file">
+
+    <h1>select your payment method</h1>
+    <form action="/posting" method="post">
+
+        <!-- name is alwayes same  -->
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">Paypal</label><br><br>
+
+        <input type="radio" id="cripto" name="payment" value="cripto">
+        <label for="cripto">Cripto</label><br><br>
+
+        <input type="radio" id="upi" name="payment" value="upi">
+        <label for="upi">UPI</label><br><br>
+
+        <input type="submit" value="submit">
+
+        <select name="selectbox" id="">
+            <option value="option1">opti</option>
+            <option value="option1">opti</option>
+            <option value="option1">opti</option>
+            <option value="option1">opti</option>
+        </select>
+
+
+
+        <h1>Audio Tag</h1>
+
+        <audio controls>
+          <source src="audio.mp3">
+        </audio>
+
+        <h1>viseo tag</h1>
+        <video controls width="400" height="350" poster="image.jpg" muted>
+          <source src="">
+        </video>
+
+        <!-- sementic element -->
+        <!-- header , nav , main, section , article , footer,  -->
+
+    </form>
+  </body>
+</html>

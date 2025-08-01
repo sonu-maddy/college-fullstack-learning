@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* tag selector */
+      h1 {
+        background-color: blueviolet;
+      }
+
+      /* group selector */
+      h1,
+      h2 {
+        background-color: aquamarine;
+      }
+
+      /* class selector */
+      .h3tag {
+        background-color: black;
+        color: white;
+      }
+
+      /* group selector */
+      .h3tag,
+      .h4tag {
+        background-color: brown;
+      }
+
+      /* id selector */
+      #idsele {
+        background-color: pink;
+        color: white;
+      }
+
+      /* universal selector */
+      /* * {
+        background-color: burlywood;
+      } */
+
+      a[href="https://example.org"]
+      {
+        color: green;
+      }
+
+      /* pseudo class selector */
+      a:hover{
+        color: red;
+      }
+
+      .anchortag:link{
+        color: black;
+        
+      }
+
+      .anchortag:visited{
+        color: yellowgreen;
+        
+      }
+
+      ul li:first-child, ul li:last-child{
+        color: blue;
+      }
+
+      ul li:nth-child(5){
+        color: brown;
+      }
+
+      .parent1>.child{
+        color: aqua;
+        font-size: 50px;
+      }
+
+      .parent1+.parent2{
+        background-color: red;
+      }
+
+      /* pseudo element */
+      
+
+    </style>
+  </head>
+  <body>
+    <h1>Selector</h1>
+    <h1>Tag Selector</h1>
+    <h2>Group Selector</h2>
+    <h3 class="h3tag">class selector</h3>
+    <h4 class="h4tag">class selector</h4>
+    <h1 id="idsele">Id Selector</h1>
+
+    <a href="https://example.org"> this is anchor tag</a><br><br>
+    <a class="anchortag" href=""> click here....</a>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+
+    <div class="parent1">
+        <div>
+            <p>child</p>
+        </div>
+    </div>
+    <div class="parent2">
+        <div >
+            <p>child2</p>
+        </div>
+    </div>
+  </body>
+</html>
