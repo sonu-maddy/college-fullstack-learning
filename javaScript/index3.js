@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <input type="text" placeholder="enter items" id="inputValue" />
-    <button onclick="additem()">add items</button>
-    <button onclick="popValue()">delete to right</button>
-    <button onclick="shiftValue()">delete to left</button>
-    <button onclick="unshiftValue()">Unshift</button>
-    <div id="display">Array []</div>
-    <br /><br /><br /><br />
-
-    <div class="showtimer"></div>
-
-   
-  </body>
-
-   <script>
-      const arr = [];
+ const arr = [];
       const display = document.getElementById("display");
 
       function updateDisplay() {
@@ -192,5 +170,3 @@
       updateClock();
 
       setInterval(updateClock, 1000);
-    </script>
-</html>
