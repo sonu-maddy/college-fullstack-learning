@@ -50,57 +50,59 @@
         // })
 
 
-        function FindNote(callback){
-            console.log("Finding Note for learning")
-            setTimeout(()=>{
-                console.log("Note Find")
-            },1000)
-            callback();
-        }
+        // function FindNote(callback){
+        //     console.log("Finding Note for learning")
+        //     setTimeout(()=>{
+        //         console.log("Note Find")
+        //     },1000)
+        //     callback();
+        // }
 
-        function Study(callback){
-            console.log("Start Study For exam")
-            setTimeout(()=>{
-                console.log("Study done")
-            },2000)
-            callback();
-        }
+        // function Study(callback){
+        //     console.log("Start Study For exam")
+        //     setTimeout(()=>{
+        //         console.log("Study done")
+        //     },2000)
+        //     callback();
+        // }
 
-        function Revise(callback){
-            console.log("Start Revise")
-            setTimeout(()=>{
-                console.log("Rivise Done")
-            },3000)
-            callback();
-        }
+        // function Revise(callback){
+        //     console.log("Start Revise")
+        //     setTimeout(()=>{
+        //         console.log("Rivise Done")
+        //     },3000)
+        //     callback();
+        // }
 
-        function Sleep(callback){
-            console.log("Time to sleep")
-            setTimeout(()=>{
-                console.log("Sleeped")
-            },4000)
-            callback();
-        }
+        // function Sleep(callback){
+        //     console.log("Time to sleep")
+        //     setTimeout(()=>{
+        //         console.log("Sleeped")
+        //     },4000)
+        //     callback();
+        // }
 
-         function GoForExam(callback){
-            console.log("Going to exam center")
-            setTimeout(()=>{
-                console.log("Exam Done")
-            },5000)
-            callback();
-        }
+        //  function GoForExam(callback){
+        //     console.log("Going to exam center")
+        //     setTimeout(()=>{
+        //         console.log("Exam Done")
+        //     },5000)
+        //     callback();
+        // }
 
-        FindNote(() =>{
-            Study(() => {
-                Revise(() => {
-                    Sleep(() => {
-                       GoForExam(() => {
-                        console.log("ready for exam now go to exam")
-                       })
-                    })
-                })
-            })
-        })
+        // FindNote(() =>{
+        //     Study(() => {
+        //         Revise(() => {
+        //             Sleep(() => {
+        //                GoForExam(() => {
+        //                 console.log("ready for exam now go to exam")
+        //                })
+        //             })
+        //         })
+        //     })
+        // })
     </script>
+
+     <script src="promise.js"></script>
 </body>
 </html>
