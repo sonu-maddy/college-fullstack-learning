@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #btn{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        height: 100px;
+        width: 200px;
+
+    }
+    .button {
+    }
+    .model{
+         position: absolute;
+        top: 40%;
+        left: 45%;
+        height: 150px;
+        width: 300px;
+        border: 1px solid black;
+        display: none;
+    }
+    .closebtn{
+        cursor: pointer;
+        font-size: 24px;
+    }
+  </style>
+  <body>
+    <div id="btn" class="button">
+      <h2>PopUp Model Explain</h2>
+      <button class="button" onclick="showPop()">PoPUp</button>
+    </div>
+
+    <div id="mymodel" class="model">
+      <div class="popMsg">
+        <span class="closebtn" onclick="showbtn()">x</span>
+        <h2>Hello!</h2>
+        <p>this is pop up msg</p>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
