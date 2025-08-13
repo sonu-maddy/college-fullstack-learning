@@ -1,0 +1,29 @@
+
+.App {
+  text-align: center;
+}
+
+.FormDetails{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.InputDetails,.FormDetailsShow{
+  border: 1px solid black;
+  height: 450px;
+  width: 500px;
+}
+.InputDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 17px;
+}
+.btn{
+  width: 50px;
+}
+
+
+
+
+
